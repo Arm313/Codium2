@@ -6,7 +6,7 @@
   <link href="//fonts.googleapis.com/css?family=Lato:400,400i,700,900" rel="stylesheet">
   <link rel="stylesheet" href="./style.css">
   <link rel="icon" type="image/png" href="./imgs/Codium.jpg" />
-  <script src="https://kit.fontawesome.com/d7b17ca0c9.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <title>Contact Us &#8211; Codium</title>
 <style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style></head>
 
@@ -16,9 +16,7 @@
       ><img src="./imgs/Artboard 3.svg" alt="Codium" />
     </a>
     <a id="menu_icn">
-      <img
-        src="https://leadavenue.com/wp-content/themes/leadavenue/imgs/mobile_menu.svg"
-      />
+      <i class="fa-solid fa-bars"></i>
     </a>
     <ul id="nav" class="menu">
       <li class="menu-item">
@@ -123,71 +121,6 @@
   </div>
 </footer>
 <script type='text/javascript' src="https://leadavenue.com/wp-includes/js/jquery/jquery.js"></script>
-<script type='text/javascript'>
-/* <![CDATA[ */
-var wpcf7 = {"apiSettings":{"root":"http:\/\/Codium\/wp-json\/contact-form-7\/v1","namespace":"contact-form-7\/v1"}};
-/* ]]> */
-</script>
-<script type='text/javascript' src="https://leadavenue.com/wp-content/plugins/contact-form-7/includes/js/scripts.js?ver=5.1.6"></script>
-<script type='text/javascript' src='https://www.google.com/recaptcha/api.js?render=6LfAjr4ZAAAAAK46zgdLSLeOALuvNX046qF4cCpJ&#038;ver=3.0'></script>
-<script type='text/javascript' src="https://leadavenue.com/wp-content/themes/leadavenue/js/navigation.js?ver=20151215"></script>
-<script type='text/javascript' src="https://leadavenue.com/wp-includes/js/wp-embed.min.js?ver=5.3.13"></script>
-<script type="text/javascript">
-( function( grecaptcha, sitekey, actions ) {
-
-	var wpcf7recaptcha = {
-
-		execute: function( action ) {
-			grecaptcha.execute(
-				sitekey,
-				{ action: action }
-			).then( function( token ) {
-				var forms = document.getElementsByTagName( 'form' );
-
-				for ( var i = 0; i < forms.length; i++ ) {
-					var fields = forms[ i ].getElementsByTagName( 'input' );
-
-					for ( var j = 0; j < fields.length; j++ ) {
-						var field = fields[ j ];
-
-						if ( 'g-recaptcha-response' === field.getAttribute( 'name' ) ) {
-							field.setAttribute( 'value', token );
-							break;
-						}
-					}
-				}
-			} );
-		},
-
-		executeOnHomepage: function() {
-			wpcf7recaptcha.execute( actions[ 'homepage' ] );
-		},
-
-		executeOnContactform: function() {
-			wpcf7recaptcha.execute( actions[ 'contactform' ] );
-		},
-
-	};
-
-	grecaptcha.ready(
-		wpcf7recaptcha.executeOnHomepage
-	);
-
-	document.addEventListener( 'change',
-		wpcf7recaptcha.executeOnContactform, false
-	);
-
-	document.addEventListener( 'wpcf7submit',
-		wpcf7recaptcha.executeOnHomepage, false
-	);
-
-} )(
-	grecaptcha,
-	'6LfAjr4ZAAAAAK46zgdLSLeOALuvNX046qF4cCpJ',
-	{"homepage":"homepage","contactform":"contactform"}
-);
-</script>
-
 <script type="text/javascript">
 jQuery(document).ready( function( $ ) {
   var didScroll;
